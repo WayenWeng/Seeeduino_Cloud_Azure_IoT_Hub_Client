@@ -1,0 +1,391 @@
+Building IoT
+
+WARNING: your configuration is out of sync. Please run make menuconfig, oldconfig or defconfig!
+make[1]: Entering directory `/home/ubuntu/openwrt/sdk'
+make[2]: Entering directory `/home/ubuntu/openwrt/sdk/package/azure-iot-sdks'
+mkdir -p /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1
+cp -fpR ./src/c/* /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/
+touch /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/.prepared_68c248a20b0b19e0bd5b36eef4c808f6
+IN_OPENWRT=1 TARGET_CPPFLAGS="-I/home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/include -I/home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/include -I/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/usr/include -I/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/include" TARGET_CFLAGS="-Os -pipe -mips32r2 -mtune=mips32r2 -fno-caller-saves -fhonour-copts -Wno-error=unused-but-set-variable -msoft-float -DIN_OPENWRT" TARGET_LDFLAGS="-L/home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/lib -L/home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/lib -L/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/usr/lib -L/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/lib" AR="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-ar" AS="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-gcc -c -Os -pipe -mips32r2 -mtune=mips32r2 -fno-caller-saves -fhonour-copts -Wno-error=unused-but-set-variable -msoft-float" LD="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-ld" NM="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-nm" CC="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-gcc" GCC="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-gcc" CXX="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-g++" RANLIB="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-ranlib" STRIP="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-strip" OBJCOPY="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-objcopy" OBJDUMP="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-objdump" cmake -DCMAKE_FIND_ROOT_PATH="/home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2" /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/CMakeLists.txt -DIN_OPENWRT=1 -Duse_amqp:bool=ON -Duse_http:bool=ON -Duse_mqtt:bool=ON -Dskip_unittests:bool=ON -Duse_floats:bool=OFF -Duse_condition:bool=OFF
+-- The C compiler identification is GNU 4.6.3
+-- The CXX compiler identification is GNU 4.6.3
+-- Check for working C compiler: /home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-gcc
+-- Check for working C compiler: /home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-g++
+-- Check for working CXX compiler: /home/ubuntu/openwrt/sdk/staging_dir/toolchain-mips_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-uclibc-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1
+rm -f /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/.configured_*
+touch /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/.configured_
+make -C /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1
+make[3]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[4]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target aziotsharedutil
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[  0%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/base64.c.o
+[  1%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/buffer.c.o
+[  2%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/constbuffer.c.o
+[  3%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/crt_abstractions.c.o
+[  3%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/constmap.c.o
+[  4%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/doublylinkedlist.c.o
+[  5%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/gballoc.c.o
+[  6%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/gb_stdio.c.o
+[  7%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/gb_time.c.o
+[  7%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/hmac.c.o
+[  8%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/hmacsha256.c.o
+[  9%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/xio.c.o
+[ 10%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/list.c.o
+[ 10%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/map.c.o
+[ 11%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/sastoken.c.o
+[ 12%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/sha1.c.o
+[ 13%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/sha224.c.o
+[ 14%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/sha384-512.c.o
+[ 14%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/strings.c.o
+[ 15%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/string_tokenizer.c.o
+[ 16%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/urlencode.c.o
+[ 17%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/usha.c.o
+[ 17%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/vector.c.o
+[ 18%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/agenttime.c.o
+[ 19%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/lock_pthreads.c.o
+[ 20%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/platform_linux.c.o
+[ 21%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/socketio_berkeley.c.o
+[ 21%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/tickcounter_linux.c.o
+[ 22%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/threadapi_pthreads.c.o
+[ 23%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/uniqueid_linux.c.o
+[ 24%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/httpapiex.c.o
+[ 25%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/httpapiexsas.c.o
+[ 25%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/httpheaders.c.o
+[ 26%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/adapters/httpapi_curl.c.o
+[ 27%] Building C object azure-c-shared-utility/CMakeFiles/aziotsharedutil.dir/src/tlsio_openssl.c.o
+Linking C static library libaziotsharedutil.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 27%] Built target aziotsharedutil
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target ctest
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 28%] Building C object azure-c-shared-utility/testtools/ctest/CMakeFiles/ctest.dir/src/ctest.c.o
+Linking C static library libctest.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 28%] Built target ctest
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target testrunnerswitcher
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 29%] Building C object azure-c-shared-utility/testtools/testrunnerswitcher/CMakeFiles/testrunnerswitcher.dir/src/testmutex.c.o
+Linking C static library libtestrunnerswitcher.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 29%] Built target testrunnerswitcher
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target micromock_ctest
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 30%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/micromockcharstararenullterminatedstrings.cpp.o
+[ 31%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/micromockexception.cpp.o
+[ 31%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/micromocktestmutex.cpp.o
+[ 32%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/mockcallrecorder.cpp.o
+[ 33%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/mockmethodcallbase.cpp.o
+[ 34%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/mockvaluebase.cpp.o
+[ 34%] Building CXX object azure-c-shared-utility/testtools/micromock/CMakeFiles/micromock_ctest.dir/src/timediscretemicromock.cpp.o
+Linking CXX static library libmicromock_ctest.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 34%] Built target micromock_ctest
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target umock_c
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 34%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umock_c.c.o
+[ 35%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umockcall.c.o
+[ 36%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umockcallrecorder.c.o
+[ 37%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umocktypename.c.o
+[ 38%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umocktypes.c.o
+[ 38%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umocktypes_c.c.o
+[ 39%] Building C object azure-c-shared-utility/testtools/umock_c/CMakeFiles/umock_c.dir/src/umocktypes_charptr.c.o
+Linking C static library libumock_c.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 39%] Built target umock_c
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target uamqp
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 40%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/amqp_definitions.c.o
+[ 40%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/amqp_frame_codec.c.o
+[ 41%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/amqp_management.c.o
+[ 42%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/amqpalloc.c.o
+[ 43%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/amqpvalue.c.o
+[ 43%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/amqpvalue_to_string.c.o
+[ 44%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/cbs.c.o
+[ 45%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/connection.c.o
+[ 46%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/consolelogger.c.o
+[ 47%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/frame_codec.c.o
+[ 47%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/header_detect_io.c.o
+[ 48%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/link.c.o
+[ 49%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/message.c.o
+[ 50%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/message_receiver.c.o
+[ 50%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/message_sender.c.o
+[ 51%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/messaging.c.o
+[ 52%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/sasl_anonymous.c.o
+[ 53%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/sasl_frame_codec.c.o
+[ 54%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/sasl_mechanism.c.o
+[ 54%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/sasl_mssbcbs.c.o
+[ 55%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/sasl_plain.c.o
+[ 56%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/saslclientio.c.o
+[ 57%] Building C object azure-uamqp-c/CMakeFiles/uamqp.dir/src/session.c.o
+Linking C static library libuamqp.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 57%] Built target uamqp
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target message_sender_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 58%] Building C object azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/main.c.o
+Linking C executable message_sender_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 58%] Built target message_sender_sample
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target message_receiver_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 59%] Building C object azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/main.c.o
+Linking C executable message_receiver_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 59%] Built target message_receiver_sample
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target mssbcbs_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 60%] Building C object azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/main.c.o
+Linking C executable mssbcbs_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 60%] Built target mssbcbs_sample
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target eh_sender_with_sas_token_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 60%] Building C object azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/main.c.o
+Linking C executable eh_sender_with_sas_token_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 60%] Built target eh_sender_with_sas_token_sample
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target umqtt
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 61%] Building C object azure-umqtt-c/CMakeFiles/umqtt.dir/src/mqtt_client.c.o
+[ 62%] Building C object azure-umqtt-c/CMakeFiles/umqtt.dir/src/mqtt_codec.c.o
+[ 63%] Building C object azure-umqtt-c/CMakeFiles/umqtt.dir/src/mqtt_message.c.o
+Linking C static library libumqtt.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 63%] Built target umqtt
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target mqtt_client_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 64%] Building C object azure-umqtt-c/samples/mqtt_client_sample/CMakeFiles/mqtt_client_sample.dir/mqtt_client_sample.c.o
+[ 65%] Building C object azure-umqtt-c/samples/mqtt_client_sample/CMakeFiles/mqtt_client_sample.dir/linux/main.c.o
+Linking C executable mqtt_client_sample
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 65%] Built target mqtt_client_sample
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 66%] Building C object iothub_client/CMakeFiles/iothub_client.dir/src/iothub_client.c.o
+[ 67%] Building C object iothub_client/CMakeFiles/iothub_client.dir/src/version.c.o
+[ 68%] Building C object iothub_client/CMakeFiles/iothub_client.dir/src/iothubtransport.c.o
+Linking C static library libiothub_client.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 68%] Built target iothub_client
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_amqp_transport
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 69%] Building C object iothub_client/CMakeFiles/iothub_client_amqp_transport.dir/src/version.c.o
+[ 69%] Building C object iothub_client/CMakeFiles/iothub_client_amqp_transport.dir/src/iothub_message.c.o
+[ 70%] Building C object iothub_client/CMakeFiles/iothub_client_amqp_transport.dir/src/iothub_client_ll.c.o
+[ 71%] Building C object iothub_client/CMakeFiles/iothub_client_amqp_transport.dir/src/iothubtransportamqp.c.o
+Linking C static library libiothub_client_amqp_transport.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 71%] Built target iothub_client_amqp_transport
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_http_transport
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 72%] Building C object iothub_client/CMakeFiles/iothub_client_http_transport.dir/src/version.c.o
+[ 72%] Building C object iothub_client/CMakeFiles/iothub_client_http_transport.dir/src/iothub_message.c.o
+[ 73%] Building C object iothub_client/CMakeFiles/iothub_client_http_transport.dir/src/iothub_client_ll.c.o
+[ 74%] Building C object iothub_client/CMakeFiles/iothub_client_http_transport.dir/src/iothubtransporthttp.c.o
+Linking C static library libiothub_client_http_transport.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 74%] Built target iothub_client_http_transport
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_mqtt_transport
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 75%] Building C object iothub_client/CMakeFiles/iothub_client_mqtt_transport.dir/src/version.c.o
+[ 76%] Building C object iothub_client/CMakeFiles/iothub_client_mqtt_transport.dir/src/iothub_message.c.o
+[ 76%] Building C object iothub_client/CMakeFiles/iothub_client_mqtt_transport.dir/src/iothub_client_ll.c.o
+[ 77%] Building C object iothub_client/CMakeFiles/iothub_client_mqtt_transport.dir/src/iothubtransportmqtt.c.o
+Linking C static library libiothub_client_mqtt_transport.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 77%] Built target iothub_client_mqtt_transport
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_sample_http
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 77%] Building C object iothub_client/samples/iothub_client_sample_http/CMakeFiles/iothub_client_sample_http.dir/iothub_client_sample_http.c.o
+[ 78%] Building C object iothub_client/samples/iothub_client_sample_http/CMakeFiles/iothub_client_sample_http.dir/linux/main.c.o
+Linking C executable iothub_client_sample_http
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 78%] Built target iothub_client_sample_http
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_sample_http_shared
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 79%] Building C object iothub_client/samples/iothub_client_sample_http_shared/CMakeFiles/iothub_client_sample_http_shared.dir/iothub_client_sample_http_shared.c.o
+[ 80%] Building C object iothub_client/samples/iothub_client_sample_http_shared/CMakeFiles/iothub_client_sample_http_shared.dir/linux/main.c.o
+Linking C executable iothub_client_sample_http_shared
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 80%] Built target iothub_client_sample_http_shared
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_sample_mqtt
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 81%] Building C object iothub_client/samples/iothub_client_sample_mqtt/CMakeFiles/iothub_client_sample_mqtt.dir/iothub_client_sample_mqtt.c.o
+[ 81%] Building C object iothub_client/samples/iothub_client_sample_mqtt/CMakeFiles/iothub_client_sample_mqtt.dir/linux/main.c.o
+Linking C executable iothub_client_sample_mqtt
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 81%] Built target iothub_client_sample_mqtt
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target iothub_client_sample_amqp
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 82%] Building C object iothub_client/samples/iothub_client_sample_amqp/CMakeFiles/iothub_client_sample_amqp.dir/iothub_client_sample_amqp.c.o
+[ 83%] Building C object iothub_client/samples/iothub_client_sample_amqp/CMakeFiles/iothub_client_sample_amqp.dir/linux/main.c.o
+Linking C executable iothub_client_sample_amqp
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 83%] Built target iothub_client_sample_amqp
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target serializer
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 84%] Building C object serializer/CMakeFiles/serializer.dir/src/agenttypesystem.c.o
+[ 85%] Building C object serializer/CMakeFiles/serializer.dir/src/codefirst.c.o
+[ 86%] Building C object serializer/CMakeFiles/serializer.dir/src/commanddecoder.c.o
+[ 86%] Building C object serializer/CMakeFiles/serializer.dir/src/datamarshaller.c.o
+[ 87%] Building C object serializer/CMakeFiles/serializer.dir/src/datapublisher.c.o
+[ 88%] Building C object serializer/CMakeFiles/serializer.dir/src/dataserializer.c.o
+[ 89%] Building C object serializer/CMakeFiles/serializer.dir/src/iotdevice.c.o
+[ 90%] Building C object serializer/CMakeFiles/serializer.dir/src/jsondecoder.c.o
+[ 90%] Building C object serializer/CMakeFiles/serializer.dir/src/jsonencoder.c.o
+[ 91%] Building C object serializer/CMakeFiles/serializer.dir/src/multitree.c.o
+[ 92%] Building C object serializer/CMakeFiles/serializer.dir/src/schema.c.o
+[ 93%] Building C object serializer/CMakeFiles/serializer.dir/src/schemalib.c.o
+[ 93%] Building C object serializer/CMakeFiles/serializer.dir/src/schemaserializer.c.o
+Linking C static library libserializer.a
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 93%] Built target serializer
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target remote_monitoring
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 94%] Building C object serializer/samples/remote_monitoring/CMakeFiles/remote_monitoring.dir/remote_monitoring.c.o
+[ 94%] Building C object serializer/samples/remote_monitoring/CMakeFiles/remote_monitoring.dir/linux/main.c.o
+Linking C executable remote_monitoring
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 94%] Built target remote_monitoring
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target simplesample_amqp
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 95%] Building C object serializer/samples/simplesample_amqp/CMakeFiles/simplesample_amqp.dir/simplesample_amqp.c.o
+[ 96%] Building C object serializer/samples/simplesample_amqp/CMakeFiles/simplesample_amqp.dir/linux/main.c.o
+Linking C executable simplesample_amqp
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 96%] Built target simplesample_amqp
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target simplesample_http
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 97%] Building C object serializer/samples/simplesample_http/CMakeFiles/simplesample_http.dir/simplesample_http.c.o
+[ 98%] Building C object serializer/samples/simplesample_http/CMakeFiles/simplesample_http.dir/linux/main.c.o
+Linking C executable simplesample_http
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 98%] Built target simplesample_http
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target temp_sensor_anomaly
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 99%] Building C object serializer/samples/temp_sensor_anomaly/CMakeFiles/temp_sensor_anomaly.dir/windows/main.c.o
+Linking C executable temp_sensor_anomaly
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 99%] Built target temp_sensor_anomaly
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+Scanning dependencies of target simplesample_mqtt
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[5]: Entering directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[ 99%] Building C object serializer/samples/simplesample_mqtt/CMakeFiles/simplesample_mqtt.dir/simplesample_mqtt.c.o
+[100%] Building C object serializer/samples/simplesample_mqtt/CMakeFiles/simplesample_mqtt.dir/linux/main.c.o
+Linking C executable simplesample_mqtt
+make[5]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+[100%] Built target simplesample_mqtt
+make[4]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+make[3]: Leaving directory `/home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1'
+touch /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/.built
+mkdir -p /home/ubuntu/openwrt/sdk/bin/ar71xx/packages /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/CONTROL /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/pkginfo
+install -d -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/lib
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/azure-c-shared-utility/*.a /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/lib/
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/iothub_client/*.a /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/lib/
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/*.a /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/lib/
+install -d -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/share/azure-iot-sdk/samples
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/samples/simplesample_http/simplesample_http /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/share/azure-iot-sdk/samples/
+find /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks -name 'CVS' -o -name '.svn' -o -name '.#*' -o -name '*~'| xargs -r rm -rf
+export CROSS="mips-openwrt-linux-uclibc-" NO_RENAME=1 ; NM="mips-openwrt-linux-uclibc-nm" STRIP="/home/ubuntu/openwrt/sdk/staging_dir/host/bin/sstrip" STRIP_KMOD="/home/ubuntu/openwrt/sdk/scripts/strip-kmod.sh" /home/ubuntu/openwrt/sdk/scripts/rstrip.sh /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks
+rstrip.sh: /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/usr/share/azure-iot-sdk/samples/simplesample_http:executable
+( echo "Package: azure-iot-sdks"; echo "Version: 1-1"; DEPENDS=''; for depend in libc libopenssl libuuid libcurl libpthread; do DEPENDS=${DEPENDS:+$DEPENDS, }${depend##+}; done; echo "Depends: $DEPENDS"; echo "Provides: "; echo "Source: package/azure-iot-sdks"; echo "Section: libs"; echo "Status: unknown ok not-installed"; echo "Essential: no"; echo "Priority: optional"; echo "Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>"; echo "Architecture: ar71xx"; echo "Installed-Size: 0"; echo -n "Description: "; . /home/ubuntu/openwrt/sdk/include/shell.sh; getvar V_Package_azure_iot_sdks_description | sed -e 's,^[[:space:]]*, ,g'; ) > /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/CONTROL/control
+chmod 644 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/CONTROL/control
+. /home/ubuntu/openwrt/sdk/include/shell.sh; (cd /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks/CONTROL;  )
+ipkg-build -c -o 0 -g 0 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks /home/ubuntu/openwrt/sdk/bin/ar71xx/packages
+Packaged contents of /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/ipkg-ar71xx/azure-iot-sdks into /home/ubuntu/openwrt/sdk/bin/ar71xx/packages/azure-iot-sdks_1-1_ar71xx.ipk
+rm -rf /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks
+mkdir -p /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/stamp /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks
+install -d -m0755 /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/usr/lib
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/azure-c-shared-utility/*.a /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/usr/lib/
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/iothub_client/*.a /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/usr/lib/
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/*.a /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/usr/lib/
+install -d -m0755 /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/usr/share/azure-iot-sdk/samples
+install -m0755 /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/samples/simplesample_http/simplesample_http /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/usr/share/azure-iot-sdk/samples/
+SHELL= /home/ubuntu/openwrt/sdk/staging_dir/host/bin/flock /home/ubuntu/openwrt/sdk/tmp/.root-copy.flock -c 'cp -fpR /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks/. /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/'
+rm -rf /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/tmp-azure-iot-sdks
+touch /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/root-ar71xx/stamp/.azure-iot-sdks_installed
+make V=ss  -j1 clean-staging
+make[3]: Entering directory `/home/ubuntu/openwrt/sdk/package/azure-iot-sdks'
+rm -f /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/stamp/.azure-iot-sdks_installed
+make[3]: Leaving directory `/home/ubuntu/openwrt/sdk/package/azure-iot-sdks'
+rm -rf /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks
+mkdir -p /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks/host /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/packages /home/ubuntu/openwrt/sdk/staging_dir/host/packages
+install -d -m0755 /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/include/azure-iot-sdks
+cp -fpR /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/azure-c-shared-utility/inc/* /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/include/
+cp -fpR /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/iothub_client/inc/* /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/include/
+cp -fpR /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/inc/* /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/include/
+install -d -m0755 /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/lib
+cp -fpR /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/azure-c-shared-utility/*.a /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/lib/
+cp -fpR /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/iothub_client/*.a /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/lib/
+cp -fpR /home/ubuntu/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/*.a /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/usr/lib/
+find /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks -name '*.la' | xargs -r rm -f; 
+if [ -f /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/packages/azure-iot-sdks.list ]; then /home/ubuntu/openwrt/sdk/scripts/clean-package.sh "/home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/packages/azure-iot-sdks.list" "/home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2"; fi
+if [ -d /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks ]; then (cd /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks; find ./ > /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks.files); 	SHELL= /home/ubuntu/openwrt/sdk/staging_dir/host/bin/flock /home/ubuntu/openwrt/sdk/tmp/.staging-dir.flock -c ' mv /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks.files /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/packages/azure-iot-sdks.list && cp -fpR /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks/* /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/; '; fi
+rm -rf /home/ubuntu/openwrt/sdk/tmp/stage-azure-iot-sdks
+touch /home/ubuntu/openwrt/sdk/staging_dir/target-mips_r2_uClibc-0.9.33.2/stamp/.azure-iot-sdks_installed
+make[2]: Leaving directory `/home/ubuntu/openwrt/sdk/package/azure-iot-sdks'
+make[1]: Leaving directory `/home/ubuntu/openwrt/sdk'
